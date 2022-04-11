@@ -1,0 +1,70 @@
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(red, green, blue, alpha);
+  background-color: aliceblue;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.6rem 0 rgb(45, 134, 134);
+  transform: translateY(-0.2rem);
+  transition: transform 150ms;
+}
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  color: white;
+  background-color: rgb(51, 84, 194);
+}
+.choice-text {
+  padding: 1.5rem;
+}
+.correct {
+  background-color: #28a745;
+}
+.incorrect {
+  background-color: #dc3545;
+}
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+.hud-main-text {
+  text-align: center;
+  color: rgb(51, 84, 194);
+}
+#progressBar {
+  width: 25rem;
+  height: 4rem;
+  border: 0.3rem solid rgb(51, 84, 194);
+  margin-top: 2rem;
+  border-radius: 20rem;
+}
+#progressBarrFull {
+  height: 3.4rem;
+  background-color: rgb(51, 84, 194);
+  border-radius: 20rem;
+  width: 0%;
+}
+/* loader */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid blue;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
